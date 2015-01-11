@@ -1,0 +1,1 @@
+compass clean && compass compile -c config.rb --force
