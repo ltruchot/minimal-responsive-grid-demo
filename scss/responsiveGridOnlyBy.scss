@@ -1,0 +1,130 @@
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+//screen size
+$small: 886px;
+$medium: 1280px;
+$large: 1674px;
+
+.wtpv .rGridContainer {
+	@include box-sizing(border-box);
+	@include clearfix();	
+	position:relative;
+	display:block;
+	padding:0;
+
+	width:$small;//minimal width
+	margin:auto;
+
+	.xs-by-2, .sm-by-2, .md-by-2, .lg-by-2, 
+	.xs-by-3, .sm-by-3, .md-by-3, .lg-by-3,
+	.xs-by-4, .sm-by-4, .md-by-4, .lg-by-4, 
+	.xs-by-5, .sm-by-5, .md-by-5, .lg-by-5,
+	.xs-by-6, .sm-by-6, .md-by-6, .lg-by-6, 
+	.xs-by-8, .sm-by-8, .md-by-8, .lg-by-8 {
+		@include box-sizing(border-box);
+		position: relative;
+		min-height: 1px;
+		margin:0;
+		padding:0;		
+		float: left;
+
+		img {
+			width:100%;
+			height:100%;
+		}
+	}
+
+	.xs-by-2 {
+		width:50%;
+	}
+	.xs-by-3 {
+		width: 33.33333333%;
+	}
+	.xs-by-4 {
+		width:25%;
+	}
+	.xs-by-5 {
+		width:20%;
+	}
+	.xs-by-6 {
+		width: 16.66666667%;
+	}
+	.xs-by-8 {
+		width:12.5%;
+	}
+
+	@media (min-width: $small) {
+
+		width:100%;//responsive width
+		margin:0;
+
+		.sm-by-2 {
+			width:50%;
+		}
+		.sm-by-3 {
+			width: 33.33333333%;
+		}
+		.sm-by-4 {
+			width:25%;
+		}
+		.sm-by-5 {
+			width:20%;
+		}
+		.sm-by-6 {
+			width: 16.66666667%;
+		}
+		.sm-by-8 {
+			width:12.5%;
+		}
+	}
+	@media (min-width: $medium) {
+
+		width:100%;//responsive width
+		margin:0;
+
+		.md-by-2 {
+			width:50%;
+		}
+		.md-by-3 {
+			width: 33.33333333%;
+		}
+		.md-by-4 {
+			width:25%;
+		}
+		.md-by-5 {
+			width:20%;
+		}
+		.md-by-6 {
+			width: 16.66666667%;
+		}
+		.md-by-8 {
+			width:12.5%;
+		}	
+	}
+
+	@media (min-width: $large) {
+		
+		width: $large; //maximal width
+		margin:auto;
+
+		.lg-by-2 {
+			width:50%;
+		}
+		.lg-by-3 {
+			width: 33.33333333%;
+		}
+		.lg-by-4 {
+			width:25%;
+		}
+		.lg-by-5 {
+			width:20%;
+		}
+		.lg-by-6 {
+			width: 16.66666667%;
+		}
+		.lg-by-8 {
+			width:12.5%;
+		}	
+	}
+}

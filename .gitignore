@@ -1,4 +1,5 @@
 # Windows image file caches
+.sass-cache
 Thumbs.db
 ehthumbs.db
 
